@@ -1,0 +1,932 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+</head>
+<body>
+    
+<nav class="navbar navbar-expand-lg bg-white shadow-sm sticky-top">
+  <div class="container">
+
+    <!-- LOGO -->
+   <a class="navbar-brand d-flex align-items-center gap-2" href="#">
+  <img src="img/ChatGPT Image Dec 24, 2025, 10_47_13 AM.png" alt="Medicio Logo" class="logo-img">
+  <span class="logo-text">MEDICIO</span>
+</a>
+
+
+    <!-- TOGGLER -->
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+      data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- MENU -->
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav mx-auto gap-lg-3">
+        <li class="nav-item">
+          <a class="nav-link active" href="#home">HOME</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#about">ABOUT</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#service">SERVICES</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#departmn">DEPARTMENTS</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#doctors">DOCTORS</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#contact">CONTACT</a>
+        </li>
+      </ul>
+
+      <!-- BUTTON -->
+      <a href="#appointmentSection" class="btn-appoint">Make an Appointment</a>
+    </div>
+
+  </div>
+</nav>
+
+
+       <!-- carousel -->
+
+<section class="hero-carousel" id="home">
+  <div class="hero-slide active">
+    <img src="img/carousel1.png">
+    <div class="hero-content">
+      <h1>At vero eos et accusamus</h1>
+      <p>When choice is free, comfort is preferred and pain avoided.
+         Yet medical care sometimes requires temporary discomfort to restore health.
+
+       </p>
+      <a href="#" class="btn-rd">Read More</a>
+    </div>
+  </div>
+
+  <div class="hero-slide">
+        <img src="img/carousel2.png">
+    <div class="hero-content">
+      <h1>Welcome to Medicio</h1>
+      <p>Advanced medical care delivered with compassion and precision.
+      Your health, safety, and comfort remain our highest priority at every stage of care.</p>
+      <a href="#" class="btn-rd">Read More</a>
+    </div>
+  </div>
+
+  <div class="hero-slide">
+        <img src="img/carousel3.png">
+    <div class="hero-content">
+      <h1>Best Healthcare Solution</h1>
+      <p>For in free time, when we have free choice and nothing prevents us from doing what pleases us most, all pleasure must be embraced and all pain must be rejected. But at certain times, either due to duties or.
+    </p>
+      <a href="#" class="btn-rd">Read More</a>
+    </div>
+  </div>
+
+  <div class="hero-arrow left" onclick="prevSlide()">❮</div>
+  <div class="hero-arrow right" onclick="nextSlide()">❯</div>
+
+</section> 
+
+
+  <!-- about -->
+
+  <div id="about" style="margin-bottom: 70px;">
+
+  <h2 class="title-main line-anim">About Us</h2>
+
+  <p class="subtitle-text text-anim">
+    His needs result from something escape him indeed are consectetur will
+  </p>
+  </div>
+
+           <!-- services -->
+
+    <section class="services" id="service">
+            <div class="cards">
+
+                <div class="card fade-up">
+                <i class="fa-solid fa-heart-pulse"></i>
+                <h3>Cardiology Care</h3>
+                <p>
+                Heart-related checkups, diagnosis, treatment, and continuous cardiac monitoring for better heart health.   </p>
+                </div>
+
+                <div class="card fade-up">
+                <i class="fa-solid fa-pills"></i>
+                <h3>Pharmacy Services</h3>
+                <p>
+                Safe and accurate medicines with proper dosage guidance and professional pharmacist support.    </p>
+                </div>
+
+                <div class="card fade-up">
+                <i class="fa-solid fa-syringe"></i>
+                <h3>Vaccination & Injection</h3>
+                <p>
+                Timely vaccinations and injections administered safely by trained medical professionals.    </p>
+                </div>
+
+                <div class="card fade-up">
+                <i class="fa-solid fa-dna"></i>
+                <h3>Laboratory Testing</h3>
+                <p>
+                 Advanced lab tests with accurate reports to support early diagnosis and effective treatment.    </p>
+                </div>
+
+            </div>
+    </section>
+
+
+               <!-- emergency -->
+
+<section class="emergency fade-in">
+  <div class="emergency-content">
+    <h2>In an emergency? Need help now?</h2>
+    <p>
+      Duis aute irure dolor in reprehenderit in voluptate velit esse
+      cillum dolore eu fugiat nulla pariatur.
+    </p>
+    <a href="#" class="btn-appointment">Make an Appointment</a>
+  </div>
+</section>
+
+
+              
+  <!-- hospitaloutsie -->
+
+<section class="hospital-info js-animate-section">
+
+  <div class="image-container slide-left">
+  <img src="img/New Post on Pinterest 2.jpg" alt="Hospital Image">
+</div>
+
+
+ <div class="hospital-text slide-right">
+  <h2>Comprehensive Healthcare Services You Can Trust</h2>
+
+  <p class="intro">
+    Our hospital delivers world-class medical care with compassion,
+    innovation, and excellence.
+  </p>
+
+  <ul>
+    <li>24/7 Emergency & Trauma Care</li>
+    <li>Experienced Doctors & Nurses</li>
+    <li>Advanced Medical Technology</li>
+    <li>Patient-Centered Treatment</li>
+  </ul>
+
+  <p class="note">
+    We follow international healthcare standards to ensure safety,
+    quality, and trust for every patient.
+  </p>
+</div>
+
+
+</section>
+
+
+    <!-- numbercount -->
+ 
+<section class="stats"> 
+  <div class="stat-card"> 
+    <i class="fa-solid fa-user-doctor"></i> 
+    <div> <h2 class="counter" data-target="25">0</h2> 
+      <p>Doctors</p> </div> </div>
+       <div class="stat-card"> <i class="fa-solid fa-hospital"></i> 
+        <div> <h2 class="counter" data-target="15">0</h2> 
+          <p>Departments</p> </div> </div> 
+          <div class="stat-card"> <i class="fa-solid fa-flask"></i> 
+            <div> <h2 class="counter" data-target="11">0</h2>
+               <p>Research Labs</p> </div> </div> 
+               <div class="stat-card"> <i class="fa-solid fa-award"></i> 
+                <div> <h2 class="counter" data-target="150">0</h2> 
+                  <p>Awards</p> </div> </div> 
+                </section>
+
+
+  <!-- lab -->
+
+<section class="about-section">
+  <div class="about-container">
+
+    <div class="about-img reveal">
+      <img src="img/download (25).jpg" alt="Lab">
+    </div>
+
+    <!-- RIGHT CONTENT -->
+   <div class="about-content slide-right">
+  <h2>Comprehensive Healthcare Services You Can Trust</h2>
+  <span class="line"></span>
+
+  <p>
+    Our goal is to provide exceptional medical care with compassion and
+    professionalism. We combine advanced treatment methods with experienced
+    doctors to ensure the best outcomes for our patients.
+  </p>
+
+  <div class="about-item reveal " >
+    <div class="icon-box">
+      <i class="fa-solid fa-hand-holding-medical"></i>
+    </div>
+    <div>
+      <h4>24/7 Emergency Care</h4>
+      <p>Round-the-clock emergency medical services for all patients.</p>
+    </div>
+  </div>
+
+  <div class="about-item reveal">
+    <div class="icon-box">
+      <i class="fa-solid fa-hospital"></i>
+    </div>
+    <div>
+      <h4>Experienced Medical Team</h4>
+      <p>Highly qualified doctors and nurses dedicated to your health.</p>
+    </div>
+  </div>
+
+  <div class="about-item reveal">
+    <div class="icon-box">
+      <i class="fa-solid fa-staff-snake"></i>
+    </div>
+    <div>
+      <h4>Advanced Medical Technology</h4>
+      <p>Modern equipment and innovative technology for accurate diagnosis.</p>
+    </div>
+  </div>
+
+  <div class="about-item reveal">
+    <div class="icon-box">
+      <i class="fa-solid fa-lungs"></i>
+    </div>
+    <div>
+      <h4>Patient-Centered Care</h4>
+      <p>Compassionate and personalized treatment focused on patient needs.</p>
+    </div>
+  </div>
+</div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- services -->
+
+<section class="services-section">
+  <h2 class="services-title">Services</h2>
+  <span class="services-line"></span>
+  <p class="services-subtitle">
+   His needs result from something escape him indeed are consectetur will
+  </p>
+</section>
+
+     <!-- feature -->
+
+<section class="feature-section">
+  <div class="feature-grid">
+
+    <div class="feature-item">
+      <div class="feature-icon">
+        <i class="fa-solid fa-heart-pulse"></i>
+      </div>
+      <h3>They don't know how to harvest.</h3>
+      <span class="feature-line"></span>
+      <p>
+        They provide nothing less than those who follow, not all greater.
+        Those who accuse them suffer less pains by right, enduring them
+        in time and following them.
+      </p>
+    </div>
+
+    <div class="feature-item">
+      <div class="feature-icon">
+        <i class="fa-solid fa-pills"></i>
+      </div>
+      <h3>The Good Shepherd</h3>
+      <span class="feature-line"></span>
+      <p>
+        As but or but not a. Let them be easy for just let them be.
+        Free corrupt nor him here not as they do not know pain.
+      </p>
+    </div>
+
+    <div class="feature-item">
+      <div class="feature-icon">
+        <i class="fa-solid fa-user-doctor"></i>
+      </div>
+      <h3>Ledo Market</h3>
+      <span class="feature-line"></span>
+      <p>
+        As they will except pleasure unless but. Certainly flight follows.
+        Less it or. Or who that pleasure obtain them their corrupt.
+      </p>
+    </div>
+
+    <div class="feature-item">
+      <div class="feature-icon">
+        <i class="fa-solid fa-dna"></i>
+      </div>
+      <h3>It is more convenient to be rough.</h3>
+      <span class="feature-line"></span>
+      <p>
+        Not and times less all but pain be follow. With desire but
+        error that flight be provide obtain nor.
+      </p>
+    </div>
+
+    <div class="feature-item">
+      <div class="feature-icon">
+        <i class="fa-solid fa-wheelchair"></i>
+      </div>
+      <h3 class="feature-active">He wants pain.</h3>
+      <span class="feature-line"></span>
+      <p>
+        When and often undertakes. It is greater but for easy as
+        either itself of body or. But mind at but other its labor.
+      </p>
+    </div>
+
+    <div class="feature-item">
+      <div class="feature-icon">
+        <i class="fa-solid fa-notes-medical"></i>
+      </div>
+      <h3>Architect of Sorrow</h3>
+      <span class="feature-line"></span>
+      <p>
+        Here troubles it some them. For flee pain or neither not and
+        debts right. Corrupt refuse we lead for.
+      </p>
+    </div>
+
+  </div>
+</section>
+
+ <!-- appoiment -->
+
+
+  <section class="appointment-section" id="appointmentSection">
+    <h2>MAKE AN APPOINTMENT</h2>
+    <p>His needs result from something escape him indeed are consectetur will</p>
+
+  <form class="appointment-form">
+
+  <input class="scroll-animate delay-1" type="text" placeholder="Your Name">
+  <input class="scroll-animate delay-2" type="email" placeholder="Your Email">
+  <input class="scroll-animate delay-3" type="tel" placeholder="Your Phone">
+
+ 
+  <input class="scroll-animate delay-4" type="date">
+  <select class="scroll-animate delay-5">
+  <option value="">Select Department</option>
+  <option value="cardiology">Cardiology</option>
+  <option value="neurology">Neurology</option>
+  <option value="orthopedics">Orthopedics</option>
+  <option value="pediatrics">Pediatrics</option>
+  <option value="dermatology">Dermatology</option>
+</select>
+
+<select class="scroll-animate delay-6">
+  <option value="">Select Doctor</option>
+  <option value="dr-john">Dr. John Mathew</option>
+  <option value="dr-sarah">Dr. Sarah Thomas</option>
+  <option value="dr-rahul">Dr. Rahul Nair</option>
+  <option value="dr-anita">Dr. Anita Menon</option>
+  <option value="dr-arjun">Dr. Arjun Kumar</option>
+</select>
+
+
+  
+  <textarea class="scroll-animate" placeholder="Message (Optional)"></textarea>
+
+  <button class="scroll-animate">Make an Appointment</button>
+
+</form>
+
+  </section>
+
+
+  <!-- departments -->
+
+ 
+<section class="medical-departments" id="departmn">
+  <div class="dept-wrapper">
+
+    <!-- LEFT MENU -->
+    <ul class="dept-menu">
+      <li class="active" data-dept="cardiology">Cardiology</li>
+      <li data-dept="neurology">Neurology</li>
+      <li data-dept="hepatology">Hepatology</li>
+      <li data-dept="pediatrics">Pediatrics</li>
+    </ul>
+
+    <!-- CONTENT -->
+    <div class="dept-details">
+      <h3 id="deptTitle">Cardiology</h3>
+      <p class="dept-sub" id="deptIntro">
+          Advanced care for heart and blood vessel conditions.Focused on prevention, diagnosis, and long-term heart health.     </p>
+      <p id="deptDesc">
+       Comprehensive diagnosis and treatment for heart diseases, including hypertension, 
+       coronary artery disease, and preventive cardiac care.We provide advanced diagnosis and treatment for heart and blood vessel diseases. Our cardiology team focuses on prevention, early detection, and long-term heart health.
+      </p>
+    </div>
+
+    <!-- IMAGE -->
+    <div class="dept-image">
+      <img id="deptImg"
+        src="img/Cardiology.png"
+        alt="Department Image">
+    </div>
+  </div>
+</section>
+
+
+<!-- Testimonials -->
+
+<section class="testimonials scroll-animate">
+  <h2 class="testimo scroll-animate">Testimonials</h2>
+  <span class="test-line scroll-animate"></span>
+  <p class="testt-subtitle scroll-animate">
+    What our patients say about our care and services.
+  </p>
+</section>
+
+
+<section class="testimonials">
+  
+  <div class="testimonial-wrapper">
+    <div class="testimonial-track">
+
+      <!-- Card 1 -->
+      <div class="testimonial-card">
+        <p class="quote">
+          Fugiat enim eram quae cillum dolore dolor amet nulla culpa multos
+          export minim fugiat dolor enim duis veniam ipsum anim magna sunt
+          elit fore quem dolore labore illum veniam.
+        </p>
+
+        <div class="user">
+          <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="">
+          <h4>Matt Brandon</h4>
+          <span>Freelancer</span>
+        </div>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="testimonial-card">
+        <p class="quote">
+          Quis quorum aliqua sint quem legam fore sunt eram irure aliqua veniam
+          tempor noster veniam sunt culpa nulla illum cillum fugiat legam.
+        </p>
+
+        <div class="user">
+          <img src="https://randomuser.me/api/portraits/men/45.jpg" alt="">
+          <h4>John Larson</h4>
+          <span>Entrepreneur</span>
+        </div>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="testimonial-card">
+        <p class="quote">
+          Proin iaculis purus consequat sem cure digni ssim donec porttitora
+          entum suscipit rhoncus. Accusantium quam, ultricies eget id.
+        </p>
+
+        <div class="user">
+          <img src="https://randomuser.me/api/portraits/men/68.jpg" alt="">
+          <h4>Saul Goodman</h4>
+          <span>CEO & Founder</span>
+        </div>
+      </div>
+
+      <!-- Card 4 -->
+  <div class="testimonial-card">
+  <p class="quote">
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque
+    habitant morbi tristique senectus et netus et malesuada fames.
+  </p>
+  <div class="user">
+    <img src="https://randomuser.me/api/portraits/women/12.jpg" alt="">
+    <h4>Emily Watson</h4>
+    <span>Marketing Manager</span>
+  </div>
+</div>
+
+<!-- Card 5 -->
+<div class="testimonial-card">
+  <p class="quote">
+    Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
+    doloremque laudantium, totam rem aperiam.
+  </p>
+  <div class="user">
+    <img src="https://randomuser.me/api/portraits/men/52.jpg" alt="">
+    <h4>Daniel Smith</h4>
+    <span>Product Designer</span>
+  </div>
+</div>
+
+<!-- Card 6 -->
+<div class="testimonial-card">
+  <p class="quote">
+    Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit,
+    sed quia consequuntur magni dolores eos.
+  </p>
+  <div class="user">
+    <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="">
+    <h4>Sophia Turner</h4>
+    <span>UX Researcher</span>
+  </div>
+</div>
+
+    </div>
+  </div>
+
+  <!-- Dots -->
+  <div class="dots">
+  <span class="dot active"></span>
+  <span class="dot"></span>
+  <span class="dot"></span>
+  <span class="dot"></span>
+</div>
+
+  </section>
+
+
+    <!-- doctors -->
+
+<section class="doctors" id="doctors">
+  <h2 class="doctor scroll-animate">Doctor</h2>
+  <span class="doct-line scroll-animate"></span>
+  <p class="doct-subtitle scroll-animate">
+    What our patients say about our care and services.
+  </p>
+</section>
+
+ <div class="doc">
+  <div class="doctor-card">
+    <img src="img/doctor2.png" alt="Doctor">
+    <div class="doctor-info">
+      <h3>Sarah Jhonson</h3>
+      <p>Anesthesiologist</p>
+    </div>
+  </div>
+
+  <div class="doctor-card">
+    <img src="img/doctor4.jpg" alt="Doctor">
+    <div class="doctor-info">
+      <h3>Rohit Verma</h3>
+      <p>Chief Medical Officer</p>
+    </div>
+  </div>
+
+  <div class="doctor-card">
+    <img src="img/docto1.png" alt="Doctor">
+    <div class="doctor-info">
+      <h3>Nikhil Rao</h3>
+      <p>Cardiology</p>
+    </div>
+  </div>
+
+ <div class="doctor-card">
+    <img src="img/doctor3.png" alt="Doctor">
+    <div class="doctor-info">
+      <h3>Amanda Jepson</h3>
+      <p>Neurosurgeon</p>
+    </div>
+  </div>
+
+</div>
+
+
+<!-- gallery -->
+
+<section class="gallery scroll-animate">
+  <h2 class="galry scroll-animate">Gallery</h2>
+  <span class="gallry-line scroll-animate"></span>
+  <p class="gary-subtitle scroll-animate">
+     His needs result from something escape him indeed are consectetur will
+  </p>
+</section>
+
+ 
+<div class="gallery-grid">
+  <img src="img/galry1 (1).jpg">
+  <img src="img/galry1 (2).jpg">
+  <img src="img/galry1 (3).jpg">
+  <img src="img/galry1 (4).jpg">
+  <img src="img/galry1 (5).jpg">
+</div>
+
+
+<!-- pricing -->
+
+
+ <section class="priceing scroll-animate">
+  <h2 class="price scroll-animate">pricing</h2>
+  <span class="prc-line scroll-animate"></span>
+  <p class="pring-subtitle scroll-animate">
+     His needs result from something escape him indeed are consectetur will
+  </p>
+</section>
+
+<section class="pricing">
+  <div class="pricing-container">
+
+   
+    <div class="plan">
+       <h3 class="plan-title">Free</h3>
+      <p class="price">$0 <span>/ month</span></p>
+      <ul>
+        <li>Help you.</li>
+        <li>Neither is the player happy.</li>
+        <li>No, but the weekend is a pain.</li>
+        <li class="mute">Quiver mass</li>
+        <li class="mute">My mass is ultricies.</li>
+      </ul>
+      <button>Buy Now</button>
+    </div>
+
+    
+    <div class="plan active">
+      <h3 class="plan-title">Business</h3>
+      <p class="price">$19 <span>/ month</span></p>
+      <ul>
+        <li>Help you.</li>
+        <li>Neither is the player happy.</li>
+        <li>No, but the weekend is a pain.</li>
+        <li>Quiver mass</li>
+        <li class="mute">My mass is ultricies.</li>
+      </ul>
+      <button>Buy Now</button>
+    </div>
+
+    <div class="plan">
+      <h3 class="plan-title">Developer</h3>
+       <p class="price">$29 <span>/ month</span></p>
+      <ul>
+        <li>Help you.</li>
+        <li>Neither is the player happy.</li>
+        <li>No, but the weekend is a pain.</li>
+        <li>Quiver mass</li>
+        <li>My mass is ultricies.</li>
+      </ul>
+      <button>Buy Now</button>
+    </div>
+
+    <!-- Ultimate -->
+    <div class="plan">
+    <h3 class="plan-title">Ultimate</h3>
+      <p class="price">$49 <span>/ month</span></p>
+      <ul>
+        <li>Help you.</li>
+        <li>Neither is the player happy.</li>
+        <li>No, but the weekend is a pain.</li>
+        <li>Quiver mass</li>
+        <li>My mass is ultricies.</li>
+      </ul>
+      <button>Buy Now</button>
+    </div>
+
+  </div>
+</section>
+
+<!-- fq -->
+
+<section class="faq-section">
+  <h2 class="faq-title">Frequently Asked Questions</h2>
+  <span class="faq-line"></span>
+
+ <div class="faq-container">
+
+<div class="faq-item" style="--i:0">
+  <button class="faq-question">
+    Non consectetur a erat nam at lectus urna duis?
+    <span class="arrow">›</span>
+  </button>
+  <div class="faq-answer">
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+  </div>
+</div>
+
+<div class="faq-item" style="--i:1">
+  <button class="faq-question">
+    Feugiat scelerisque varius morbi enim nunc faucibus?
+    <span class="arrow">›</span>
+  </button>
+  <div class="faq-answer">
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+  </div>
+</div>
+
+<div class="faq-item" style="--i:2">
+  <button class="faq-question">
+    Dolor sit amet consectetur adipiscing elit pellentesque?
+    <span class="arrow">›</span>
+  </button>
+  <div class="faq-answer">
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+  </div>
+</div>
+
+<div class="faq-item" style="--i:3">
+  <button class="faq-question">
+    Ac odio tempor orci dapibus. Aliquam eleifend mi in nulla?
+    <span class="arrow">›</span>
+  </button>
+  <div class="faq-answer">
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+  </div>
+</div>
+
+<div class="faq-item" style="--i:4">
+  <button class="faq-question">
+    Tempus quam pellentesque nec nam aliquam sem et tortor?
+    <span class="arrow">›</span>
+  </button>
+  <div class="faq-answer">
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+  </div>
+</div>
+
+<div class="faq-item" style="--i:5">
+  <button class="faq-question">
+    Perspiciatis quod quo quos nulla quo illum ullam?
+    <span class="arrow">›</span>
+  </button>
+  <div class="faq-answer">
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+  </div>
+</div>
+
+</div>
+
+</section>
+
+
+ <!-- CONTACT SECTION -->
+
+
+<div class="contact-header nx-anim nx-fade-up" id="contact">
+  <h2>Contact Us</h2>
+  <span></span>
+  <p>Let’s connect and build something amazing together</p>
+</div>
+
+
+<!-- CONTACT SECTION -->
+<section class="contact-new">
+
+  <div class="contact-grid">
+
+    <!-- LEFT CARD -->
+    <div class="contact-info animate slide-left">
+      <h3>Reach Us</h3>
+
+      <div class="info-item">
+        <i>📍</i>
+        <p>A108 Adam Street<br>New York, NY 535022</p>
+      </div>
+
+      <div class="info-item">
+        <i>📧</i>
+        <p>contact@example.com</p>
+      </div>
+
+      <div class="info-item">
+        <i>📞</i>
+        <p>+1 5589 55488 55</p>
+      </div>
+
+      <!-- MAP -->
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.180569192316!2d76.27308527472716!3d10.79446098936143!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba8555e95769adf%3A0x296a14d0c52b30b5!2sCafe!5e0!3m2!1sen!2sin!4v1580213562185"
+        allowfullscreen=""
+        loading="lazy">
+      </iframe>
+
+    </div>
+
+    <!-- RIGHT CARD -->
+    <div class="contact-form animate slide-right">
+      <h3>Send Message</h3>
+
+      <form>
+        <div class="form-row">
+          <input type="text" placeholder="Your Name" required>
+          <input type="email" placeholder="Your Email" required>
+        </div>
+
+        <input type="text" placeholder="Subject" required>
+        <textarea placeholder="Message" required></textarea>
+
+        <button type="submit">Send Message</button>
+      </form>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- footer -->
+
+<footer class="footer">
+  <div class="footer-container">
+
+    <!-- Column 1 -->
+    <div class="footer-col">
+      <h2 class="footer-logo">Medicio</h2>
+      <p>
+        A108 Adam Street<br>
+        New York, NY 535022
+      </p>
+
+      <p><strong>Phone:</strong> +1 5589 55488 55</p>
+      <p><strong>Email:</strong> info@example.com</p>
+
+      <div class="social-icons">
+        <a href="#">X</a>
+        <a href="#">f</a>
+        <a href="#">◎</a>
+        <a href="#">in</a>
+      </div>
+    </div>
+
+    <!-- Column 2 -->
+    <div class="footer-col">
+      <h4>Useful Links</h4>
+      <ul>
+        <li>Home</li>
+        <li>About us</li>
+        <li>Services</li>
+        <li>Terms of service</li>
+        <li>Privacy policy</li>
+      </ul>
+    </div>
+
+    <!-- Column 3 -->
+    <div class="footer-col">
+      <h4>Our Services</h4>
+      <ul>
+        <li>Web Design</li>
+        <li>Web Development</li>
+        <li>Product Management</li>
+        <li>Marketing</li>
+        <li>Graphic Design</li>
+      </ul>
+    </div>
+
+    <!-- Column 4 -->
+    <div class="footer-col">
+      <h4>Hic solutasetp</h4>
+      <ul>
+        <li>Molestiae accusamus iure</li>
+        <li>Excepturi dignissimos</li>
+        <li>Suscipit distinctio</li>
+        <li>Dilecta</li>
+        <li>Sit quas consectetur</li>
+      </ul>
+    </div>
+
+    <!-- Column 5 -->
+    <div class="footer-col">
+      <h4>Nobis illum</h4>
+      <ul>
+        <li>Ipsam</li>
+        <li>Laudantium dolorum</li>
+        <li>Dinera</li>
+        <li>Trodelas</li>
+        <li>Flexo</li>
+      </ul>
+    </div>
+
+  </div>
+
+  <hr>
+</footer>
+
+<button id="backToTop">
+  ↑
+</button>
+
+
+<script src="scripts.js" defer>
+</script>
+
+</body>
+</html>
+
+
