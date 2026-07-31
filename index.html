@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Medico - Healthcare Services</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
@@ -20,7 +20,7 @@
     <!-- LOGO -->
    <a class="navbar-brand d-flex align-items-center gap-2" href="#">
   <img src="img/ChatGPT Image Dec 24, 2025, 10_47_13 AM.png" alt="Medicio Logo" class="logo-img">
-  <span class="logo-text">MEDICIO</span>
+  <span class="logo-text">MEDICO</span>
 </a>
 
 
@@ -104,14 +104,31 @@
 
   <!-- about -->
 
-  <div id="about" style="margin-bottom: 70px;">
-
-  <h2 class="title-main line-anim">About Us</h2>
-
-  <p class="subtitle-text text-anim">
-    His needs result from something escape him indeed are consectetur will
-  </p>
-  </div>
+  <section class="about-hero" id="about">
+    <div class="about-hero-content">
+      <h2 class="title-main line-anim">About Medico</h2>
+      <p class="subtitle-text text-anim">
+        Leading the way in medical excellence and compassionate care since 1995
+      </p>
+      <div class="about-features">
+        <div class="about-feature-item fade-up">
+          <i class="fa-solid fa-award"></i>
+          <h4>25+ Years Experience</h4>
+          <p>Trusted healthcare provider with decades of medical excellence</p>
+        </div>
+        <div class="about-feature-item fade-up">
+          <i class="fa-solid fa-user-doctor"></i>
+          <h4>Expert Medical Team</h4>
+          <p>Board-certified doctors and dedicated healthcare professionals</p>
+        </div>
+        <div class="about-feature-item fade-up">
+          <i class="fa-solid fa-heart-pulse"></i>
+          <h4>Patient-Centered Care</h4>
+          <p>Personalized treatment plans focused on your wellbeing</p>
+        </div>
+      </div>
+    </div>
+  </section>
 
            <!-- services -->
 
@@ -159,12 +176,12 @@
       Duis aute irure dolor in reprehenderit in voluptate velit esse
       cillum dolore eu fugiat nulla pariatur.
     </p>
-    <a href="#" class="btn-appointment">Make an Appointment</a>
+    <a href="#appointmentSection" class="btn-appointment">Make an Appointment</a>
   </div>
 </section>
 
 
-              
+             
   <!-- hospitaloutsie -->
 
 <section class="hospital-info js-animate-section">
@@ -382,15 +399,14 @@
     <h2>MAKE AN APPOINTMENT</h2>
     <p>His needs result from something escape him indeed are consectetur will</p>
 
-  <form class="appointment-form">
+  <form class="appointment-form" id="appointmentForm">
 
-  <input class="scroll-animate delay-1" type="text" placeholder="Your Name">
-  <input class="scroll-animate delay-2" type="email" placeholder="Your Email">
-  <input class="scroll-animate delay-3" type="tel" placeholder="Your Phone">
-
+  <input class="scroll-animate delay-1" type="text" placeholder="Your Name" id="appName" required>
+  <input class="scroll-animate delay-2" type="email" placeholder="Your Email" id="appEmail" required>
+  <input class="scroll-animate delay-3" type="tel" placeholder="Your Phone" id="appPhone" required>
  
-  <input class="scroll-animate delay-4" type="date">
-  <select class="scroll-animate delay-5">
+  <input class="scroll-animate delay-4" type="date" id="appDate" required>
+  <select class="scroll-animate delay-5" id="appDepartment" required>
   <option value="">Select Department</option>
   <option value="cardiology">Cardiology</option>
   <option value="neurology">Neurology</option>
@@ -399,7 +415,7 @@
   <option value="dermatology">Dermatology</option>
 </select>
 
-<select class="scroll-animate delay-6">
+<select class="scroll-animate delay-6" id="appDoctor" required>
   <option value="">Select Doctor</option>
   <option value="dr-john">Dr. John Mathew</option>
   <option value="dr-sarah">Dr. Sarah Thomas</option>
@@ -410,9 +426,9 @@
 
 
   
-  <textarea class="scroll-animate" placeholder="Message (Optional)"></textarea>
+  <textarea class="scroll-animate" placeholder="Message (Optional)" id="appMessage"></textarea>
 
-  <button class="scroll-animate">Make an Appointment</button>
+  <button class="scroll-animate" type="submit">Make an Appointment</button>
 
 </form>
 
@@ -582,6 +598,12 @@
     <div class="doctor-info">
       <h3>Sarah Jhonson</h3>
       <p>Anesthesiologist</p>
+      <div class="doctor-social">
+        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+        <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+      </div>
     </div>
   </div>
 
@@ -590,6 +612,12 @@
     <div class="doctor-info">
       <h3>Rohit Verma</h3>
       <p>Chief Medical Officer</p>
+      <div class="doctor-social">
+        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+        <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+      </div>
     </div>
   </div>
 
@@ -598,6 +626,12 @@
     <div class="doctor-info">
       <h3>Nikhil Rao</h3>
       <p>Cardiology</p>
+      <div class="doctor-social">
+        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+        <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+      </div>
     </div>
   </div>
 
@@ -606,6 +640,12 @@
     <div class="doctor-info">
       <h3>Amanda Jepson</h3>
       <p>Neurosurgeon</p>
+      <div class="doctor-social">
+        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+        <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+      </div>
     </div>
   </div>
 
@@ -624,11 +664,18 @@
 
  
 <div class="gallery-grid">
-  <img src="img/galry1 (1).jpg">
-  <img src="img/galry1 (2).jpg">
-  <img src="img/galry1 (3).jpg">
-  <img src="img/galry1 (4).jpg">
-  <img src="img/galry1 (5).jpg">
+  <img src="img/galry1 (1).jpg" data-caption="Hospital Facility">
+  <img src="img/galry1 (2).jpg" data-caption="Medical Equipment">
+  <img src="img/galry1 (3).jpg" data-caption="Patient Care">
+  <img src="img/galry1 (4).jpg" data-caption="Modern Infrastructure">
+  <img src="img/galry1 (5).jpg" data-caption="Healthcare Team">
+</div>
+
+<!-- Lightbox -->
+<div class="lightbox" id="lightbox">
+  <span class="lightbox-close">&times;</span>
+  <img class="lightbox-content" id="lightboxImg">
+  <div class="lightbox-caption" id="lightboxCaption"></div>
 </div>
 
 
@@ -651,13 +698,13 @@
        <h3 class="plan-title">Free</h3>
       <p class="price">$0 <span>/ month</span></p>
       <ul>
-        <li>Help you.</li>
-        <li>Neither is the player happy.</li>
-        <li>No, but the weekend is a pain.</li>
-        <li class="mute">Quiver mass</li>
-        <li class="mute">My mass is ultricies.</li>
+        <li>Basic Consultation</li>
+        <li>Health Records Access</li>
+        <li>Email Support</li>
+        <li class="mute">Priority Booking</li>
+        <li class="mute">24/7 Support</li>
       </ul>
-      <button>Buy Now</button>
+      <button>Get Started</button>
     </div>
 
     
@@ -665,26 +712,26 @@
       <h3 class="plan-title">Business</h3>
       <p class="price">$19 <span>/ month</span></p>
       <ul>
-        <li>Help you.</li>
-        <li>Neither is the player happy.</li>
-        <li>No, but the weekend is a pain.</li>
-        <li>Quiver mass</li>
-        <li class="mute">My mass is ultricies.</li>
+        <li>General Consultation</li>
+        <li>Lab Tests Included</li>
+        <li>Phone Support</li>
+        <li>Priority Booking</li>
+        <li class="mute">24/7 Support</li>
       </ul>
-      <button>Buy Now</button>
+      <button>Get Started</button>
     </div>
 
     <div class="plan">
       <h3 class="plan-title">Developer</h3>
        <p class="price">$29 <span>/ month</span></p>
       <ul>
-        <li>Help you.</li>
-        <li>Neither is the player happy.</li>
-        <li>No, but the weekend is a pain.</li>
-        <li>Quiver mass</li>
-        <li>My mass is ultricies.</li>
+        <li>Specialist Consultation</li>
+        <li>Advanced Diagnostics</li>
+        <li>24/7 Phone Support</li>
+        <li>Priority Booking</li>
+        <li>Home Visits</li>
       </ul>
-      <button>Buy Now</button>
+      <button>Get Started</button>
     </div>
 
     <!-- Ultimate -->
@@ -692,13 +739,13 @@
     <h3 class="plan-title">Ultimate</h3>
       <p class="price">$49 <span>/ month</span></p>
       <ul>
-        <li>Help you.</li>
-        <li>Neither is the player happy.</li>
-        <li>No, but the weekend is a pain.</li>
-        <li>Quiver mass</li>
-        <li>My mass is ultricies.</li>
+        <li>VIP Consultation</li>
+        <li>Full Health Package</li>
+        <li>Dedicated Support</li>
+        <li>Emergency Priority</li>
+        <li>International Coverage</li>
       </ul>
-      <button>Buy Now</button>
+      <button>Get Started</button>
     </div>
 
   </div>
@@ -783,7 +830,7 @@
 <div class="contact-header nx-anim nx-fade-up" id="contact">
   <h2>Contact Us</h2>
   <span></span>
-  <p>Let’s connect and build something amazing together</p>
+  <p>Let's connect and build something amazing together</p>
 </div>
 
 
@@ -824,14 +871,14 @@
     <div class="contact-form animate slide-right">
       <h3>Send Message</h3>
 
-      <form>
+      <form id="contactForm">
         <div class="form-row">
-          <input type="text" placeholder="Your Name" required>
-          <input type="email" placeholder="Your Email" required>
+          <input type="text" placeholder="Your Name" id="contactName" required>
+          <input type="email" placeholder="Your Email" id="contactEmail" required>
         </div>
 
-        <input type="text" placeholder="Subject" required>
-        <textarea placeholder="Message" required></textarea>
+        <input type="text" placeholder="Subject" id="contactSubject" required>
+        <textarea placeholder="Message" id="contactMessage" required></textarea>
 
         <button type="submit">Send Message</button>
       </form>
@@ -839,6 +886,203 @@
 
   </div>
 </section>
+
+<!-- Emergency Contact Bar -->
+<div class="emergency-bar">
+  <div class="emergency-bar-content">
+    <div class="emergency-info">
+      <i class="fa-solid fa-phone-volume"></i>
+      <span>Emergency: <strong>+1 5589 55488 55</strong></span>
+    </div>
+    <div class="emergency-info">
+      <i class="fa-solid fa-clock"></i>
+      <span>24/7 Emergency Services Available</span>
+    </div>
+    <div class="theme-toggle" id="themeToggle">
+      <i class="fa-solid fa-moon"></i>
+    </div>
+  </div>
+</div>
+
+<!-- Newsletter Section -->
+<section class="newsletter-section">
+  <div class="newsletter-container">
+    <div class="newsletter-content">
+      <i class="fa-solid fa-envelope-open-text"></i>
+      <h3>Subscribe to Our Newsletter</h3>
+      <p>Get the latest health tips, medical updates, and exclusive offers delivered to your inbox.</p>
+    </div>
+    <form class="newsletter-form" id="newsletterForm">
+      <input type="email" placeholder="Enter your email address" id="newsletterEmail" required>
+      <button type="submit">Subscribe</button>
+    </form>
+  </div>
+</section>
+
+<!-- Awards & Recognition Section -->
+<section class="awards-section">
+  <div class="awards-container">
+    <h2 class="awards-title">Awards & Recognition</h2>
+    <span class="awards-line"></span>
+    <p class="awards-subtitle">Recognized for excellence in healthcare services</p>
+    
+    <div class="awards-grid">
+      <div class="award-card fade-up">
+        <div class="award-icon">
+          <i class="fa-solid fa-trophy"></i>
+        </div>
+        <h4>Best Hospital 2024</h4>
+        <p>National Healthcare Excellence Award</p>
+      </div>
+      
+      <div class="award-card fade-up">
+        <div class="award-icon">
+          <i class="fa-solid fa-medal"></i>
+        </div>
+        <h4>Top 50 Hospitals</h4>
+        <p>Ranked among America's Best Hospitals</p>
+      </div>
+      
+      <div class="award-card fade-up">
+        <div class="award-icon">
+          <i class="fa-solid fa-star"></i>
+        </div>
+        <h4>Patient Choice Award</h4>
+        <p>5-Star Rating from Patients</p>
+      </div>
+      
+      <div class="award-card fade-up">
+        <div class="award-icon">
+          <i class="fa-solid fa-certificate"></i>
+        </div>
+        <h4>JCI Accredited</h4>
+        <p>International Quality Certification</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Health Blog Section -->
+<section class="blog-section">
+  <div class="blog-container">
+    <h2 class="blog-title">Health Tips & Insights</h2>
+    <span class="blog-line"></span>
+    <p class="blog-subtitle">Stay informed with the latest medical knowledge</p>
+    
+    <div class="blog-grid">
+      <article class="blog-card fade-up">
+        <div class="blog-image">
+          <img src="img/brain.jpg" alt="Blog Post">
+          <span class="blog-category">Cardiology</span>
+        </div>
+        <div class="blog-content">
+          <h4>Heart Health: 10 Tips for a Healthy Heart</h4>
+          <p>Learn simple lifestyle changes that can significantly improve your cardiovascular health...</p>
+          <div class="blog-meta">
+            <span><i class="fa-solid fa-calendar"></i> Dec 15, 2024</span>
+            <span><i class="fa-solid fa-clock"></i> 5 min read</span>
+          </div>
+          <a href="#" class="blog-read-more">Read More →</a>
+        </div>
+      </article>
+      
+      <article class="blog-card fade-up">
+        <div class="blog-image">
+          <img src="img/download (25).jpg" alt="Blog Post">
+          <span class="blog-category">Wellness</span>
+        </div>
+        <div class="blog-content">
+          <h4>Nutrition Guide: Eating for Optimal Health</h4>
+          <p>Discover the essential nutrients your body needs and how to incorporate them into your diet...</p>
+          <div class="blog-meta">
+            <span><i class="fa-solid fa-calendar"></i> Dec 12, 2024</span>
+            <span><i class="fa-solid fa-clock"></i> 7 min read</span>
+          </div>
+          <a href="#" class="blog-read-more">Read More →</a>
+        </div>
+      </article>
+      
+      <article class="blog-card fade-up">
+        <div class="blog-image">
+          <img src="img/New Post on Pinterest 2.jpg" alt="Blog Post">
+          <span class="blog-category">Preventive Care</span>
+        </div>
+        <div class="blog-content">
+          <h4>Importance of Regular Health Checkups</h4>
+          <p>Why preventive healthcare is crucial for early detection and better treatment outcomes...</p>
+          <div class="blog-meta">
+            <span><i class="fa-solid fa-calendar"></i> Dec 10, 2024</span>
+            <span><i class="fa-solid fa-clock"></i> 4 min read</span>
+          </div>
+          <a href="#" class="blog-read-more">Read More →</a>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- Insurance Partners Section -->
+<section class="insurance-section">
+  <div class="insurance-container">
+    <h2 class="insurance-title">Accepted Insurance Plans</h2>
+    <span class="insurance-line"></span>
+    <p class="insurance-subtitle">We work with major insurance providers</p>
+    
+    <div class="insurance-logos">
+      <div class="insurance-logo fade-up">
+        <i class="fa-solid fa-shield-halved"></i>
+        <span>BlueCross</span>
+      </div>
+      <div class="insurance-logo fade-up">
+        <i class="fa-solid fa-shield-halved"></i>
+        <span>Aetna</span>
+      </div>
+      <div class="insurance-logo fade-up">
+        <i class="fa-solid fa-shield-halved"></i>
+        <span>UnitedHealth</span>
+      </div>
+      <div class="insurance-logo fade-up">
+        <i class="fa-solid fa-shield-halved"></i>
+        <span>Cigna</span>
+      </div>
+      <div class="insurance-logo fade-up">
+        <i class="fa-solid fa-shield-halved"></i>
+        <span>Medicare</span>
+      </div>
+      <div class="insurance-logo fade-up">
+        <i class="fa-solid fa-shield-halved"></i>
+        <span>Medicaid</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Patient Portal Login Modal -->
+<div class="modal" id="patientPortalModal">
+  <div class="modal-content">
+    <span class="modal-close">&times;</span>
+    <div class="modal-header">
+      <i class="fa-solid fa-user-doctor"></i>
+      <h3>Patient Portal Login</h3>
+      <p>Access your medical records and appointments</p>
+    </div>
+    <form class="modal-form" id="patientPortalForm">
+      <input type="email" placeholder="Email Address" required>
+      <input type="password" placeholder="Password" required>
+      <button type="submit">Login</button>
+      <a href="#" class="forgot-password">Forgot Password?</a>
+    </form>
+    <div class="modal-footer">
+      <p>Don't have an account? <a href="#">Register Here</a></p>
+    </div>
+  </div>
+</div>
+
+<!-- Patient Portal Button -->
+<button class="patient-portal-btn" id="patientPortalBtn">
+  <i class="fa-solid fa-lock"></i>
+  <span>Patient Portal</span>
+</button>
 
 
 <!-- footer -->
@@ -858,10 +1102,10 @@
       <p><strong>Email:</strong> info@example.com</p>
 
       <div class="social-icons">
-        <a href="#">X</a>
-        <a href="#">f</a>
-        <a href="#">◎</a>
-        <a href="#">in</a>
+        <a href="#" aria-label="Twitter"><i class="fa-brands fa-twitter"></i></a>
+        <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+        <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+        <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
       </div>
     </div>
 
@@ -869,11 +1113,11 @@
     <div class="footer-col">
       <h4>Useful Links</h4>
       <ul>
-        <li>Home</li>
-        <li>About us</li>
-        <li>Services</li>
-        <li>Terms of service</li>
-        <li>Privacy policy</li>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About us</a></li>
+        <li><a href="#service">Services</a></li>
+        <li><a href="#">Terms of service</a></li>
+        <li><a href="#">Privacy policy</a></li>
       </ul>
     </div>
 
@@ -881,52 +1125,71 @@
     <div class="footer-col">
       <h4>Our Services</h4>
       <ul>
-        <li>Web Design</li>
-        <li>Web Development</li>
-        <li>Product Management</li>
-        <li>Marketing</li>
-        <li>Graphic Design</li>
+        <li>Cardiology</li>
+        <li>Neurology</li>
+        <li>Pediatrics</li>
+        <li>Dermatology</li>
+        <li>Orthopedics</li>
       </ul>
     </div>
 
     <!-- Column 4 -->
     <div class="footer-col">
-      <h4>Hic solutasetp</h4>
-      <ul>
-        <li>Molestiae accusamus iure</li>
-        <li>Excepturi dignissimos</li>
-        <li>Suscipit distinctio</li>
-        <li>Dilecta</li>
-        <li>Sit quas consectetur</li>
+      <h4>Opening Hours</h4>
+      <ul class="hours-list">
+        <li><span>Mon - Fri:</span> 8:00 - 20:00</li>
+        <li><span>Saturday:</span> 9:00 - 18:00</li>
+        <li><span>Sunday:</span> 9:00 - 14:00</li>
+        <li><span>Emergency:</span> 24/7</li>
       </ul>
     </div>
 
     <!-- Column 5 -->
     <div class="footer-col">
-      <h4>Nobis illum</h4>
+      <h4>Quick Contact</h4>
       <ul>
-        <li>Ipsam</li>
-        <li>Laudantium dolorum</li>
-        <li>Dinera</li>
-        <li>Trodelas</li>
-        <li>Flexo</li>
+        <li><i class="fa-solid fa-phone"></i> +1 5589 55488 55</li>
+        <li><i class="fa-solid fa-envelope"></i> info@medico.com</li>
+        <li><i class="fa-solid fa-location-dot"></i> New York, USA</li>
       </ul>
     </div>
 
   </div>
 
   <hr>
+  <div class="footer-bottom">
+    <p>Copyright © 2025 <strong>Medico</strong>. All Rights Reserved. Designed with <i class="fa-solid fa-heart" style="color: #e74c3c;"></i> for better healthcare</p>
+  </div>
 </footer>
+
+<!-- Loading Overlay -->
+<div class="loading-overlay" id="loadingOverlay">
+  <div class="loader"></div>
+</div>
+
+<!-- Toast Notification -->
+<div class="toast" id="toast">
+  <div class="toast-icon"></div>
+  <div class="toast-message"></div>
+</div>
 
 <button id="backToTop">
   ↑
 </button>
 
+<!-- Cookie Consent Banner -->
+<div class="cookie-banner" id="cookieBanner">
+  <div class="cookie-content">
+    <p>We use cookies to enhance your experience. By continuing to visit this site you agree to our use of cookies. <a href="#">Learn more</a></p>
+    <div class="cookie-buttons">
+      <button class="cookie-accept" id="acceptCookies">Accept</button>
+      <button class="cookie-decline" id="declineCookies">Decline</button>
+    </div>
+  </div>
+</div>
 
 <script src="scripts.js" defer>
 </script>
 
 </body>
 </html>
-
-
